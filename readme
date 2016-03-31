@@ -1,0 +1,6 @@
+1. The GSL and the Cuba library have to be installed.
+2. If the GSL or Cuba is not installed in the standard system directory, open "Makefile" contained in the MultiDimInt root directory, and set the variables "GSL_INCLUDE_PATH", "GSL_LIB_PATH" and "CUBA_PATH" to the appropriate paths. Do not modify the rest of the file.
+3. Open a terminal in the MultiDimInt root directory and run "make". This builds MultiDimInt and generates a library file "libmultidimint.a" in the root directory.
+4. To use MultiDimInt in your own code, link your program to "libmultidimint.a" as well as the GSL and Cuba, and include the header file "MultiDimInt.h".
+5. If Doxygen is installed, one can also generate the documentation of MultiDimInt by running "make doc" in the root directory. Afterwards, the documentation can be found under "doc/documentation.html".
+6. A few small programs demonstrating the usage of MultiDimInt can be found in the directory "demo". If you modify these, just run "make" in the MultiDimInt root directory to rebuild them.
