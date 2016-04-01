@@ -25,6 +25,8 @@ namespace MultiDimInt
 	 * on those subregions, however, but maintains a list of all subregions and selects the region with the largest absolute
 	 * error for the next cycle of sampling and subdivision. That is, Suave uses global error estimation and terminates
 	 * when the requested relative or absolute accuracy is attained.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	class CubaSuaveAlgorithm : public CubaAlgorithm
 	{

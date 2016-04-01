@@ -17,6 +17,8 @@ namespace MultiDimInt
 	 * The QAG algorithm is a simple adaptive integration procedure. The integration region is divided into subintervals,
 	 * and on each iteration the subinterval with the largest estimated error is bisected. This reduces the overall error
 	 * rapidly, as the subintervals become concentrated around local difficulties in the integrand.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	class GSLNestedQAGAlgorithm : public GSLNestedAlgorithm
 	{

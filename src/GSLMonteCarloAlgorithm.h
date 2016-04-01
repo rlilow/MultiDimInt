@@ -15,6 +15,8 @@ namespace MultiDimInt
 	 * 
 	 * The GSL provides three different Monte Carlo integration schemes (Plain, Miser, Vegas). This class acts as a wrapper
 	 * for these algorithms.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	class GSLMonteCarloAlgorithm : public Algorithm
 	{

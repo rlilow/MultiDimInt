@@ -18,6 +18,8 @@ namespace MultiDimInt
 	 * -Integration">Numerical Integration</a>.
 	 * 
 	 * Note that the error handling is only performed for the outermost integration.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	class GSLNestedAlgorithm : public Algorithm
 	{

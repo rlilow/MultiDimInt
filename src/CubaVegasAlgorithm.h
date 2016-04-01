@@ -15,6 +15,8 @@ namespace MultiDimInt
 	 * Vegas is a Monte Carlo algorithm that uses importance sampling as a variance-reduction technique. Vegas iteratively
 	 * builds up a piecewise constant weight function, represented on a rectangular grid. Each iteration consists of a
 	 * sampling step followed by a refinement of the grid.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	class CubaVegasAlgorithm : public CubaAlgorithm
 	{

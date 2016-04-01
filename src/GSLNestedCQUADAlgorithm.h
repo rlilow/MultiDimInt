@@ -28,7 +28,9 @@ namespace MultiDimInt
 	 * and 32 over 5, 9, 17 and 33 nodes respectively. Each interval is initialized with the lowest-degree rule. When an
 	 * interval is processed, the next-higher degree rule is evaluated and an error estimate is computed based on the L_2-norm
 	 * of the difference between the underlying interpolating polynomials of both rules. If the highest-degree rule has
-	 * already been used, or the interpolatory polynomials differ significantly, the interval is bisected. 
+	 * already been used, or the interpolatory polynomials differ significantly, the interval is bisected.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	class GSLNestedCQUADAlgorithm : public GSLNestedAlgorithm
 	{

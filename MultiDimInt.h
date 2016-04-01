@@ -20,6 +20,8 @@
 /**
  * \mainpage MultiDimInt
  * Allows to perform multi-dimensional integrations using various integration algorithms.
+ * 
+ * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
  */
 
 #endif

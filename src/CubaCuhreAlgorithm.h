@@ -18,6 +18,8 @@ namespace MultiDimInt
 	 * In moderate dimensions Cuhre is very competitive, particularly if the integrand is well approximated by polynomials.
 	 * As the dimension increases, the number of points sampled by the cubature rules rises considerably, however, and by
 	 * the same token the usefulness declines.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	class CubaCuhreAlgorithm : public CubaAlgorithm
 	{

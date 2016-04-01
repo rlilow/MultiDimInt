@@ -90,6 +90,8 @@ namespace MultiDimInt
 	 * 
 	 * It expects the number of fixed arguments \a DimFix as well as the number of the integration variables \a DimInt
 	 * of the integrand as template parameters.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	template <std::size_t DimFix, std::size_t DimInt>
 	class Integrator
@@ -248,6 +250,8 @@ namespace MultiDimInt
 	 * It uses an Algorithm of choice and can deal with different finite as well as infinite integration boundaries.
 	 * 
 	 * It expects the the number of variables \a DimInt of the integrand as a template parameter.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	template <std::size_t DimInt>
 	class Integrator<0, DimInt>

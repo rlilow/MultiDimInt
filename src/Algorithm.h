@@ -10,6 +10,8 @@ namespace MultiDimInt
 	 * \brief Abstract base class for integration algorithms.
 	 * 
 	 * Specific algorithms are implemented as classes derived from this base class.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	class Algorithm
 	{

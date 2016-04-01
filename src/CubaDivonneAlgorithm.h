@@ -26,7 +26,9 @@ namespace MultiDimInt
 	 * (relatively small) number of sampled points, Divonne will move directly into the local minimum closest to the starting
 	 * point, which may or may not be close to the absolute minimum.
 	 * 
-	 * Divonne is a lot more complex than Suave and Vegas but also significantly faster for many integrands. 
+	 * Divonne is a lot more complex than Suave and Vegas but also significantly faster for many integrands.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	class CubaDivonneAlgorithm : public CubaAlgorithm
 	{

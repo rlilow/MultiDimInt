@@ -18,7 +18,9 @@ namespace MultiDimInt
 	 * subintervals around the singularity. As the subintervals decrease in size the successive approximations to the integral
 	 * converge in a limiting fashion. This approach to the limit can be accelerated using an extrapolation procedure. The
 	 * QAGSS algorithm combines adaptive bisection with the Wynn epsilon-algorithm to speed up the integration of many types
-	 * of integrable singularities. 
+	 * of integrable singularities.
+	 * 
+	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
 	 */
 	class GSLNestedQAGSAlgorithm : public GSLNestedAlgorithm
 	{
