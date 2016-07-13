@@ -7,8 +7,10 @@ CUBA_PATH=.
 CC=g++
 CFLAGS=-O -Wall -pedantic -std=c++11 -fopenmp
 
-INCLUDE=-I $(GSL_INCLUDE_PATH) -I $(CUBA_PATH) 
+INCLUDE=-I $(GSL_INCLUDE_PATH) -I $(CUBA_PATH)
 LINK=-L $(GSL_LIB_PATH) -lgsl -L $(CUBA_PATH) -lcuba
+
+LINK_DEPENDENCIES=$(wildcard $(GSL_LIB_PATH)/libgsl.a $(CUBA_PATH)/libcuba.a)
 
 LIBRARY=MultiDimInt
 
@@ -41,7 +43,7 @@ all: $(LIB_OBJECTS) $(ARCHIVE_FILE) $(EXECUTABLES)
 
 -include $(LIB_DEPENDENCIES)
 
-%.o: %.cpp
+%.o: %.cpp $(LINK_DEPENDENCIES)
 	$(CC) -c $(CFLAGS) $(INCLUDE) $< -o $@ $(LINK)
 	@$(CC) -MM $< > $*.d
 	@\sed -i '1s|^|$(LIB_PATH)/|' $*.d
