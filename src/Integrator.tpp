@@ -151,8 +151,6 @@ void MultiDimInt::Integrator<DimFix, DimInt>::integrate_without_warning (const s
 		{
 			value = 0.0;
 			error = 0.0;
-			
-			return true;
 		}
 		
 		if ( lowerBound < upperBound )	// if a lower boundary is smaller than the corresponding upper boundary, copy them unchanged into LowerBounds and UpperBounds
@@ -325,8 +323,6 @@ void MultiDimInt::Integrator<0, DimInt>::integrate_without_warning (const Argume
 		{
 			value = 0.0;
 			error = 0.0;
-			
-			return true;
 		}
 		
 		if ( lowerBound < upperBound )	// if a lower boundary is smaller than the corresponding upper boundary, copy them unchanged into LowerBounds and UpperBounds
