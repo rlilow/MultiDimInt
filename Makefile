@@ -8,7 +8,7 @@ CC=g++
 CFLAGS=-O3 -Wall -pedantic -std=c++11 -fopenmp
 
 INCLUDE=-I $(GSL_INCLUDE_PATH) -I $(CUBA_PATH)
-LINK=-L $(GSL_LIB_PATH) -lgsl -L $(CUBA_PATH) -lcuba
+LINK=-L $(GSL_LIB_PATH) -lgsl -lgslcblas -L $(CUBA_PATH) -lcuba
 
 LINK_DEPENDENCIES=$(wildcard $(GSL_LIB_PATH)/libgsl.a $(CUBA_PATH)/libcuba.a)
 
