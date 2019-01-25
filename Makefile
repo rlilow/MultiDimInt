@@ -1,16 +1,17 @@
-# If necessary, modify the paths to the GSL and the Cuba library.
+# If necessary, modify the paths to GSL and Cuba.
 GSL_INCLUDE_PATH=.
 GSL_LIB_PATH=.
-CUBA_PATH=.
+CUBA_INCLUDE_PATH=.
+CUBA_LIB_PATH=.
 
 # The rest usually does not need to be modified.
 CC=g++
 CFLAGS=-O3 -Wall -pedantic -std=c++11 -fopenmp
 
-INCLUDE=-I $(GSL_INCLUDE_PATH) -I $(CUBA_PATH)
-LINK=-L $(GSL_LIB_PATH) -lgsl -lgslcblas -L $(CUBA_PATH) -lcuba
+INCLUDE=-I $(GSL_INCLUDE_PATH) -I $(CUBA_INCLUDE_PATH)
+LINK=-L $(GSL_LIB_PATH) -lgsl -lgslcblas -L $(CUBA_LIB_PATH) -lcuba
 
-LINK_DEPENDENCIES=$(wildcard $(GSL_LIB_PATH)/libgsl.a $(CUBA_PATH)/libcuba.a)
+LINK_DEPENDENCIES=$(wildcard $(GSL_LIB_PATH)/libgsl.a $(CUBA_LIB_PATH)/libcuba.a)
 
 LIBRARY=MultiDimInt
 
@@ -46,7 +47,7 @@ all: $(LIB_OBJECTS) $(ARCHIVE_FILE) $(EXECUTABLES)
 %.o: %.cpp $(LINK_DEPENDENCIES)
 	$(CC) -c $(CFLAGS) $(INCLUDE) $< -o $@ $(LINK)
 	@$(CC) -MM $< > $*.d
-	@\sed -i"" "1s|^|$(LIB_PATH)/|" $*.d
+	@\sed -i.bak "1s|^|$(LIB_PATH)/|" $*.d && \rm $*.d.bak
 
 $(ARCHIVE_FILE): $(LIB_OBJECTS) $(LIB_TEMPLATES) $(LIB_TEMPLATE_HEADERS)
 	\ar rcs $@ $^
@@ -65,8 +66,9 @@ clean:
 
 portable:
 	@\cp $(MAKE_NAME) $(MAKE_NAME).tmp
-	@\sed -i"" "2c\GSL_INCLUDE_PATH=." $(MAKE_NAME)
-	@\sed -i"" "3c\GSL_LIB_PATH=." $(MAKE_NAME)
-	@\sed -i"" "4c\CUBA_PATH=." $(MAKE_NAME)
+	@\sed -i.bak "2c\GSL_INCLUDE_PATH=." $(MAKE_NAME) && \rm $(MAKE_NAME).bak
+	@\sed -i.bak "3c\GSL_LIB_PATH=." $(MAKE_NAME) && \rm $(MAKE_NAME).bak
+	@\sed -i.bak "4c\CUBA_INCLUDE_PATH=." $(MAKE_NAME) && \rm $(MAKE_NAME).bak
+	@\sed -i.bak "5c\CUBA_LIB_PATH=." $(MAKE_NAME) && \rm $(MAKE_NAME).bak
 	\tar -czf $(LIBRARY).tar.gz $(NECESSARY_FILES)
 	@\mv $(MAKE_NAME).tmp $(MAKE_NAME)
