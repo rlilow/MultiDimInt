@@ -6,7 +6,7 @@ CUBA_LIB_PATH=.
 
 # The rest usually does not need to be modified.
 CC=g++
-CFLAGS=-O3 -Wall -pedantic -std=c++11 -fopenmp
+CFLAGS=-O3 -Wall -pedantic -std=c++11 -fopenmp -ffast-math -flto -march=native
 
 INCLUDE=-I $(GSL_INCLUDE_PATH) -I $(CUBA_INCLUDE_PATH)
 LINK=-L $(GSL_LIB_PATH) -lgsl -lgslcblas -L $(CUBA_LIB_PATH) -lcuba
