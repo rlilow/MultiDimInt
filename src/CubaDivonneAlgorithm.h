@@ -40,7 +40,7 @@ namespace MultiDimInt
 		 * 
 		 *  - flags = 0
 		 *  - mineval = 0
-		 *  - statefile = \c NULL
+		 *  - statefile = ""
 		 *  - spin = \c NULL
 		 *  - seed = 0
 		 *  - key1 = 47
