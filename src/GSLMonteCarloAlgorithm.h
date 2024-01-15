@@ -77,11 +77,11 @@ namespace MultiDimInt
 		};
 		
 		/**
-		 * Performs the actual integration of GSLMonteCarloAlgorithm::gsl_mc_integrand by calling the appropriate function
-		 * of the GSL. \a dimInt is the number of integration variables and \a gslMonteIntegrand a pointer to the \c gsl_monte_function
-		 * expected by the integration routine. It writes the numerical value of the integral into \a value, the estimated
-		 * error into \a error, the probability that this error estimate is wrong into \a prop and an optional further comment
-		 * into \a furtherComment. Furthermore, it returns the GSL error code.
+		 * Performs the actual integration of GSLMonteCarloAlgorithm::gsl_mc_integrand by calling the appropriate
+		 * function of the GSL. \a dimInt is the number of integration variables and \a gslMonteIntegrand a pointer to
+		 * the \c gsl_monte_function expected by the integration routine. It writes the numerical value of the integral
+		 * into \a value, the estimated error into \a error and an optional further comment into \a furtherComment.
+		 * Furthermore, it returns the GSL error code.
 		 */
 		virtual int gsl_mc_integration (std::size_t dimInt, gsl_monte_function& gslMonteIntegrand, double& value, double& error, std::string& furtherComment) const = 0;
 		

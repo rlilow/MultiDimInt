@@ -71,7 +71,7 @@ namespace MultiDimInt
 		 * Performs the actual integration of CubaAlgorithm::cuba_integrand by calling the appropriate function of the Cuba
 		 * library. It takes the number of integration variables \a dimInt, a reference to a CubaAlgorithm::CubaData \c struct
 		 * \a cubaData provided by CubaAlgorithm::run, writes the numerical value of the integral into \a value, the estimated
-		 * error into \a error, the probability that this error estimate is wrong into \a prop and an optional further comment
+		 * error into \a error, the probability that this error estimate is wrong into \a prob and an optional further comment
 		 * into \a furtherComment. It returns \c true if the integration succeeded and \c false otherwise.
 		 */
 		virtual bool cuba_integration (int dimInt, CubaData& cubaData, double& value, double& error, double& prob, std::string& furtherComment) const = 0;
