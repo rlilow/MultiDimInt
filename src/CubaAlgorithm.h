@@ -26,28 +26,28 @@ namespace MultiDimInt
 		
 	protected:
 		/**
-		 * Constructor instantiating a Monte Carlo integration scheme using some algorithm of the Cuba library with absolute
-		 * error limit \a absErr, relative error limit \a absRel and maximal number of integrand evaluations \a maxEval.
-		 * The common Cuba parameters are set to the following values:
-		 * 
+		 * Constructor instantiating an integration scheme using some algorithm of the Cuba library with absolute error
+		 * limit \a absErr, relative error limit \a absRel and maximal number of integrand evaluations \a maxEval. The
+		 * common Cuba parameters are set to the following values:
+		 *
 		 *  - flags = 0
 		 *  - mineval = 0
 		 *  - statefile = ""
 		 *  - spin = \c NULL
 		 *  - key = 0
-		 * 
-		 * For further details on these parameters or possible specific Cuba algorithms see the <a href="http://arxiv.org
-		 * /pdf/hep-ph/0404043.pdf">Cuba library documentation</a>.
+		 *
+		 * For further details on these parameters or possible specific Cuba algorithms see the <a
+		 * href="http://arxiv.org /pdf/hep-ph/0404043.pdf">Cuba library documentation</a>.
 		 */
 		CubaAlgorithm (double absErr, double relErr, int maxEval);
 		
 		/**
-		 * Constructor instantiating a Monte Carlo integration scheme using some algorithm of the Cuba library with absolute
-		 * error limit \a absErr, relative error limit \a absRel and maximal number of integrand evaluations \a maxEval.
-		 * All further arguments are the common Cuba parameters.
+		 * Constructor instantiating an integration scheme using some algorithm of the Cuba library with absolute error
+		 * limit \a absErr, relative error limit \a absRel and maximal number of integrand evaluations \a maxEval. All
+		 * further arguments are the common Cuba parameters.
 		 *
-		 * For further details on these parameters or possible specific Cuba algorithms see the <a href="http://arxiv.org
-		 * /pdf/hep-ph/0404043.pdf">Cuba library documentation</a>.
+		 * For further details on these parameters or possible specific Cuba algorithms see the <a
+		 * href="http://arxiv.org /pdf/hep-ph/0404043.pdf">Cuba library documentation</a>.
 		 */
 		CubaAlgorithm (double absErr, double relErr, int maxEval,
 					   int flags, int mineval, const std::string& statefile, void* spin);
