@@ -1,6 +1,5 @@
 #include "CubaAlgorithm.h"
 
-#include <bitset>
 #include <climits>
 #include <iostream>
 #include <sstream>
