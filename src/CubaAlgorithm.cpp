@@ -11,7 +11,7 @@
 
 MultiDimInt::Algorithm::Result MultiDimInt::CubaAlgorithm::run (const InternalIntegrand& func, const std::size_t dimInt, const double* argsFix) const
 {
-	if ( dimInt > INT_MAX )	// Cuba algorithms only accept an 'int' as the number of integration variables, not a potentially larger 'size_t'; in practise 'dimInt' will of course never exceed the largest possible 'int' value, but explicitly checking this won't hurt
+	if ( dimInt > INT_MAX )	// Cuba algorithms only accept an 'int' as the number of integration variables, not a potentially larger 'size_t'; in practice 'dimInt' will of course never exceed the largest possible 'int' value, but explicitly checking this won't hurt
 	{
 		std::cout << std::endl
 				  << " MultiDimInt::CubaAlgorithm Error: Number of integration variables to large" << std::endl
