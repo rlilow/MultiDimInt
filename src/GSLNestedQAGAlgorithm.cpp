@@ -1,4 +1,4 @@
-#include "GSLNestedQAGAlgorithm.h"
+#include "GSLNestedQAGAlgorithm.hpp"
 
 #include <iostream>
 

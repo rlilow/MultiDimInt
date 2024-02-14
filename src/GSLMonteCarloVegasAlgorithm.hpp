@@ -1,7 +1,7 @@
 #ifndef MULTIDIMINT_GSL_MONTE_CARLO_VEGAS_ALGORITHM_H
 #define MULTIDIMINT_GSL_MONTE_CARLO_VEGAS_ALGORITHM_H
 
-#include "GSLMonteCarloAlgorithm.h"
+#include "GSLMonteCarloAlgorithm.hpp"
 
 #include <string>
 

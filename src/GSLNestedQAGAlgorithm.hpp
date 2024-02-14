@@ -1,7 +1,7 @@
 #ifndef MULTIDIMINT_GSL_NESTED_QAG_ALGORITHM_H
 #define MULTIDIMINT_GSL_NESTED_QAG_ALGORITHM_H
 
-#include "GSLNestedAlgorithm.h"
+#include "GSLNestedAlgorithm.hpp"
 
 #include <gsl/gsl_math.h>
 

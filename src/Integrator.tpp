@@ -1,4 +1,4 @@
-#include "BindMemberFunction.h"
+#include "BindMemberFunction.hpp"
 
 #include <array>
 #include <cmath>

@@ -1,4 +1,4 @@
-#include "CubaAlgorithm.h"
+#include "CubaAlgorithm.hpp"
 
 #include <climits>
 #include <iostream>

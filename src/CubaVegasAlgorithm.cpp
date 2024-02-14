@@ -1,4 +1,4 @@
-#include "CubaVegasAlgorithm.h"
+#include "CubaVegasAlgorithm.hpp"
 
 #include <cmath>
 #include <iostream>

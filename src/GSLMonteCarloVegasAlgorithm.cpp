@@ -1,4 +1,4 @@
-#include "GSLMonteCarloVegasAlgorithm.h"
+#include "GSLMonteCarloVegasAlgorithm.hpp"
 
 #include <iostream>
 #include <sstream>

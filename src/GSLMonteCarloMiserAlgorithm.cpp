@@ -1,4 +1,4 @@
-#include "GSLMonteCarloMiserAlgorithm.h"
+#include "GSLMonteCarloMiserAlgorithm.hpp"
 
 #include <iostream>
 #include <string>

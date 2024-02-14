@@ -1,4 +1,4 @@
-#include "GSLNestedQNGAlgorithm.h"
+#include "GSLNestedQNGAlgorithm.hpp"
 
 #include <gsl/gsl_integration.h>
 

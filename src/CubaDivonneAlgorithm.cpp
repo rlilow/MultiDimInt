@@ -1,4 +1,4 @@
-#include "CubaDivonneAlgorithm.h"
+#include "CubaDivonneAlgorithm.hpp"
 
 #include <iostream>
 #include <string>

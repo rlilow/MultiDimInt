@@ -1,7 +1,7 @@
 #ifndef MULTIDIMINT_INTEGRATOR_H
 #define MULTIDIMINT_INTEGRATOR_H
 
-#include "Algorithm.h"
+#include "Algorithm.hpp"
 
 #include <array>
 #include <functional>

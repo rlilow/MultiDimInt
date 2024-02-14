@@ -1,4 +1,4 @@
-#include "../src/BindMemberFunction.h"
+#include "../src/BindMemberFunction.hpp"
 
 #include <cmath>
 #include <functional>

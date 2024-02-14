@@ -1,4 +1,4 @@
-#include "GSLNestedAlgorithm.h"
+#include "GSLNestedAlgorithm.hpp"
 
 #include <string>
 

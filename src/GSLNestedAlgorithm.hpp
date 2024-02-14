@@ -1,7 +1,7 @@
 #ifndef MULTIDIMINT_GSL_NESTED_ALGORITHM_H
 #define MULTIDIMINT_GSL_NESTED_ALGORITHM_H
 
-#include "Algorithm.h"
+#include "Algorithm.hpp"
 
 #include <vector>
 

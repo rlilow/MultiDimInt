@@ -1,4 +1,4 @@
-#include "GSLMonteCarloPlainAlgorithm.h"
+#include "GSLMonteCarloPlainAlgorithm.hpp"
 
 #include <string>
 #include <vector>

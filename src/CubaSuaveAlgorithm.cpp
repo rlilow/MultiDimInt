@@ -1,4 +1,4 @@
-#include "CubaSuaveAlgorithm.h"
+#include "CubaSuaveAlgorithm.hpp"
 
 #include <iostream>
 #include <string>

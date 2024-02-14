@@ -1,4 +1,4 @@
-#include "CubaCuhreAlgorithm.h"
+#include "CubaCuhreAlgorithm.hpp"
 
 #include <string>
 

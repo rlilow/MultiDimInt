@@ -1,4 +1,4 @@
-#include "../MultiDimInt.h"
+#include "../MultiDimInt.hpp"
 
 #include <cmath>
 #include <iostream>

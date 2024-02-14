@@ -1,7 +1,7 @@
 #ifndef MULTIDIMINT_CUBA_ALGORITHM_H
 #define MULTIDIMINT_CUBA_ALGORITHM_H
 
-#include "Algorithm.h"
+#include "Algorithm.hpp"
 
 #include <string>
 

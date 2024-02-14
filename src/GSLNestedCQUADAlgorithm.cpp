@@ -1,4 +1,4 @@
-#include "GSLNestedCQUADAlgorithm.h"
+#include "GSLNestedCQUADAlgorithm.hpp"
 
 #include <iostream>
 
