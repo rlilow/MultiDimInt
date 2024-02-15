@@ -1,17 +1,19 @@
-# If necessary, modify the paths to GSL and Cuba.
+# If necessary, modify the paths to GSL, Cuba and Cubature.
 GSL_INCLUDE_PATH=.
 GSL_LIB_PATH=.
 CUBA_INCLUDE_PATH=.
 CUBA_LIB_PATH=.
+CUBATURE_INCLUDE_PATH=.
+CUBATURE_LIB_PATH=.
 
 # The rest usually does not need to be modified.
 CC=g++
 CFLAGS=-O3 -Wall -pedantic -std=c++11 -fopenmp -ffast-math -flto -march=native
 
-INCLUDE=-I $(GSL_INCLUDE_PATH) -I $(CUBA_INCLUDE_PATH)
-LINK=-L $(GSL_LIB_PATH) -lgsl -lgslcblas -L $(CUBA_LIB_PATH) -lcuba
+INCLUDE=-I $(GSL_INCLUDE_PATH) -I $(CUBA_INCLUDE_PATH) -I $(CUBATURE_INCLUDE_PATH)
+LINK=-L $(GSL_LIB_PATH) -lgsl -lgslcblas -L $(CUBA_LIB_PATH) -lcuba -L $(CUBATURE_LIB_PATH) -lcubature
 
-LINK_DEPENDENCIES=$(wildcard $(GSL_LIB_PATH)/libgsl.a $(CUBA_LIB_PATH)/libcuba.a)
+LINK_DEPENDENCIES=$(wildcard $(GSL_LIB_PATH)/libgsl.a $(CUBA_LIB_PATH)/libcuba.a $(CUBATURE_LIB_PATH)/libcubature.a)
 
 LIBRARY=MultiDimInt
 
@@ -70,5 +72,7 @@ portable:
 	@\sed -i.bak "3c\GSL_LIB_PATH=." $(MAKE_NAME) && \rm $(MAKE_NAME).bak
 	@\sed -i.bak "4c\CUBA_INCLUDE_PATH=." $(MAKE_NAME) && \rm $(MAKE_NAME).bak
 	@\sed -i.bak "5c\CUBA_LIB_PATH=." $(MAKE_NAME) && \rm $(MAKE_NAME).bak
+	@\sed -i.bak "6c\CUBATURE_INCLUDE_PATH=." $(MAKE_NAME) && \rm $(MAKE_NAME).bak
+	@\sed -i.bak "7c\CUBATURE_LIB_PATH=." $(MAKE_NAME) && \rm $(MAKE_NAME).bak
 	\tar -czf $(LIBRARY).tar.gz $(NECESSARY_FILES)
 	@\mv $(MAKE_NAME).tmp $(MAKE_NAME)

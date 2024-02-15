@@ -17,6 +17,11 @@
 #include "src/GSLNestedQAGSAlgorithm.hpp"
 #include "src/GSLNestedQNGAlgorithm.hpp"
 
+#include "src/CubatureSerialHAdaptiveAlgorithm.hpp"
+#include "src/CubatureSerialPAdaptiveAlgorithm.hpp"
+#include "src/CubatureParallelHAdaptiveAlgorithm.hpp"
+#include "src/CubatureParallelPAdaptiveAlgorithm.hpp"
+
 /**
  * \mainpage MultiDimInt
  * C++ library providing a uniform interface for multi-dimensional integrations using various open source integration libraries 

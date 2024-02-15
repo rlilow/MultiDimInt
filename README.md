@@ -11,6 +11,7 @@ Before compiling the code, the following dependencies need to be installed:
 - [GNU Make](https://www.gnu.org/software/make/)
 - [GNU Scientific Library](https://www.gnu.org/software/gsl/) (GSL)
 - [Cuba](https://feynarts.de/cuba/)
+- [Cubature](https://github.com/stevengj/cubature)
 
 ### Download and compilation
 
@@ -21,7 +22,7 @@ git clone https://github.com/rlilow/MultiDimInt.git
 cd MultiDimInt
 ```
 
-If the header or library files of the GSL or Cuba cannot be found in the standard search paths, open `Makefile` and set the variables `GSL_INCLUDE_PATH`, `GSL_LIB_PATH`, `CUBA_INCLUDE_PATH` and `CUBA_LIB_PATH` to the appropriate paths. Do not modify the rest of the file.
+If the header or library files of the GSL, Cuba or Cubature cannot be found in the standard search paths, open `Makefile` and set the variables `GSL_INCLUDE_PATH`, `GSL_LIB_PATH`, `CUBA_INCLUDE_PATH`, `CUBA_LIB_PATH`, `CUBATURE_INCLUDE_PATH` and `CUBATURE_LIB_PATH` to the appropriate paths. Do not modify the rest of the file.
 
 Afterwards run
 
