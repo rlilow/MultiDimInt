@@ -19,7 +19,7 @@ namespace MultiDimInt
 	 * described by the modulus of the integrand, so that the points are concentrated in the regions that make the largest
 	 * contribution to the integral.
 	 * 
-	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
+	 * Author: Robert Lilow (2016)
 	 */
 	class GSLMonteCarloVegasAlgorithm : public GSLMonteCarloAlgorithm
 	{

@@ -20,7 +20,7 @@ namespace MultiDimInt
 	 * QAGSS algorithm combines adaptive bisection with the Wynn epsilon-algorithm to speed up the integration of many types
 	 * of integrable singularities.
 	 * 
-	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
+	 * Author: Robert Lilow (2016)
 	 */
 	class GSLNestedQAGSAlgorithm : public GSLNestedAlgorithm
 	{

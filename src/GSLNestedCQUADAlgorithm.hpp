@@ -30,7 +30,7 @@ namespace MultiDimInt
 	 * of the difference between the underlying interpolating polynomials of both rules. If the highest-degree rule has
 	 * already been used, or the interpolatory polynomials differ significantly, the interval is bisected.
 	 * 
-	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
+	 * Author: Robert Lilow (2016)
 	 */
 	class GSLNestedCQUADAlgorithm : public GSLNestedAlgorithm
 	{

@@ -19,7 +19,7 @@ namespace MultiDimInt
 	 * The plain Monte Carlo algorithm samples points randomly from the integration region to estimate the integral and
 	 * its error.
 	 * 
-	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
+	 * Author: Robert Lilow (2016)
 	 */
 	class GSLMonteCarloPlainAlgorithm : public GSLMonteCarloAlgorithm
 	{

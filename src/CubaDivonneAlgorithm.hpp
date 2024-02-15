@@ -28,7 +28,7 @@ namespace MultiDimInt
 	 * 
 	 * Divonne is a lot more complex than Suave and Vegas but also significantly faster for many integrands.
 	 * 
-	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
+	 * Author: Robert Lilow (2016)
 	 */
 	class CubaDivonneAlgorithm : public CubaAlgorithm
 	{

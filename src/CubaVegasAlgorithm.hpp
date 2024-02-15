@@ -16,7 +16,7 @@ namespace MultiDimInt
 	 * builds up a piecewise constant weight function, represented on a rectangular grid. Each iteration consists of a
 	 * sampling step followed by a refinement of the grid.
 	 * 
-	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
+	 * Author: Robert Lilow (2016)
 	 */
 	class CubaVegasAlgorithm : public CubaAlgorithm
 	{

@@ -13,7 +13,7 @@ namespace MultiDimInt
 	 * The Cuba library provides three different Monte Carlo integration schemes (Vegas, Suave, Divonne) and one cubature
 	 * scheme (Cuhre). This class acts as a wrapper for these algorithms.
 	 * 
-	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
+	 * Author: Robert Lilow (2016)
 	 */
 	class CubaAlgorithm : public Algorithm
 	{

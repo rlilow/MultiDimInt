@@ -19,7 +19,7 @@ namespace MultiDimInt
 	 * 
 	 * Note that the error handling is only performed for the outermost integration.
 	 * 
-	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
+	 * Author: Robert Lilow (2016)
 	 */
 	class GSLNestedAlgorithm : public Algorithm
 	{

@@ -18,7 +18,7 @@ namespace MultiDimInt
 	 * The Miser algorithm of Press and Farrar is based on recursive stratified sampling. This technique aims to reduce
 	 * the overall integration error by concentrating integration points in the regions of highest variance.
 	 * 
-	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
+	 * Author: Robert Lilow (2016)
 	 */
 	class GSLMonteCarloMiserAlgorithm : public GSLMonteCarloAlgorithm
 	{

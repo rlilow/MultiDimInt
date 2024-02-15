@@ -17,7 +17,7 @@ namespace MultiDimInt
 	 * The QNG algorithm is a non-adaptive procedure which uses fixed Gauss-Kronrod-Patterson abscissae to sample the integrand
 	 * at a maximum of 87 points. It is provided for fast integration of smooth functions.
 	 * 
-	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
+	 * Author: Robert Lilow (2016)
 	 */
 	class GSLNestedQNGAlgorithm : public GSLNestedAlgorithm
 	{

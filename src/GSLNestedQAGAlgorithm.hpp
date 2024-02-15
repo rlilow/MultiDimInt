@@ -18,7 +18,7 @@ namespace MultiDimInt
 	 * and on each iteration the subinterval with the largest estimated error is bisected. This reduces the overall error
 	 * rapidly, as the subintervals become concentrated around local difficulties in the integrand.
 	 * 
-	 * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
+	 * Author: Robert Lilow (2016)
 	 */
 	class GSLNestedQAGAlgorithm : public GSLNestedAlgorithm
 	{
