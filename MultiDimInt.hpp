@@ -19,7 +19,7 @@
 
 /**
  * \mainpage MultiDimInt
- * Allows to perform multi-dimensional integrations using various integration algorithms.
+ * C++ library providing a uniform interface for multi-dimensional integrations using various open source integration libraries 
  * 
  * Author: Robert Lilow, ITA, ZAH, Heidelberg University (2016)
  */
