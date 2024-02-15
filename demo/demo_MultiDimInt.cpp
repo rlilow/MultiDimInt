@@ -138,7 +138,7 @@ int main()
 	integrator1.integrate(x, result1, error1);								// performing the integration in test case 1 (if no integration boundaries are provided as arguments to the 'integrate' method, the integration is performed over the unit hypercube)
 	integrator2.integrate(x, lowerBounds2, upperBounds2, result2, error2);	// performing the integration in test case 2
 	integrator3.integrate(lowerBounds3, upperBounds3, result3, error3);		// performing the integration in test case 3 (here, 'integrate' expects no fixed arguments, as x is not an argument of testFuncObj3 but was provided via its constructor)
-	integrator4.integrate(x, lowerBounds4, upperBounds4, result4, error3);	// performing the integration in test case 4
+	integrator4.integrate(x, lowerBounds4, upperBounds4, result4, error4);	// performing the integration in test case 4
 	
 	std::cout << std::scientific	// write the integration results, their errors and the exact results to the standard output
 			  << std::endl
