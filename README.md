@@ -13,6 +13,39 @@ Before compiling the code, the following dependencies need to be installed:
 - [Cuba](https://feynarts.de/cuba/)
 - [Cubature](https://github.com/stevengj/cubature)
 
+### Additional preparations
+
+For Cubature a static library file needs to be created that MultiDimInt can link against. Inside the root directory of Cubature, change the following lines in `Makefile` (or in a copy of it named `makefile`)
+```make
+all: htest ptest
+
+...
+
+clean:
+	rm -f htest ptest clencurt_gen *.o
+```
+to
+```make
+all: htest ptest hcubature.o pcubature.o libcubature.a
+
+%.o: %.c
+	cc -c $(CFLAGS) $< -o $@
+
+libcubature.a: hcubature.o pcubature.o
+	\ar rcs $@ $^
+
+...
+
+clean:
+	rm -f htest ptest clencurt_gen *.o *.a
+```
+
+Afterwards run
+
+```bash
+make
+```
+
 ### Download and compilation
 
 Clone the repository into the desired location and change into the root directory by running
